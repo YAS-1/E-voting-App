@@ -1,6 +1,12 @@
 # E-voting-App
 
-# 
+# MEMBERS
+
+# Priscila Denise Muwanguzi M23B23/010 
+
+# Yawe Arthur Shalom M23B23/016 
+
+# Mwebembezi Nicole Mbabazi M23B23/026
 
 
 # E-Voting Console Application (Refactored)
