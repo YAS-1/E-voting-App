@@ -1,0 +1,150 @@
+{
+  "candidates": {},
+  "candidate_id_counter": 1,
+  "voting_stations": {
+    "1": {
+      "id": 1,
+      "name": "Updated Central Station",
+      "location": "Mukono Main Campus",
+      "region": "Mukono",
+      "capacity": 600,
+      "registered_voters": 0,
+      "supervisor": "Jane Supervisor",
+      "contact": "0700000000",
+      "opening_time": "08:00",
+      "closing_time": "17:00",
+      "is_active": true,
+      "created_at": "2026-03-13 18:54:48.524904",
+      "created_by": "admin"
+    }
+  },
+  "station_id_counter": 2,
+  "polls": {
+    "1": {
+      "id": 1,
+      "title": "National General Election 2026",
+      "description": "General election test poll",
+      "election_type": "General",
+      "start_date": "2026-04-01",
+      "end_date": "2026-04-02",
+      "positions": [
+        {
+          "position_id": 1,
+          "position_title": "Executive President",
+          "candidate_ids": [],
+          "max_winners": 1
+        }
+      ],
+      "station_ids": [
+        1
+      ],
+      "status": "draft",
+      "total_votes_cast": 0,
+      "created_at": "2026-03-13 19:28:10.470954",
+      "created_by": "admin"
+    }
+  },
+  "poll_id_counter": 2,
+  "positions": {
+    "1": {
+      "id": 1,
+      "title": "Executive President",
+      "description": "National executive leader",
+      "level": "National",
+      "max_winners": 1,
+      "min_candidate_age": 35,
+      "is_active": true,
+      "created_at": "2026-03-13 19:09:45.514949",
+      "created_by": "admin"
+    }
+  },
+  "position_id_counter": 2,
+  "voters": {},
+  "voter_id_counter": 1,
+  "admins": {
+    "1": {
+      "id": 1,
+      "username": "admin",
+      "password": "240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9",
+      "full_name": "System Administrator",
+      "email": "admin@evote.com",
+      "role": "super_admin",
+      "created_at": "2026-03-12 10:54:37.248091",
+      "is_active": true
+    },
+    "2": {
+      "id": 2,
+      "username": "test_admin",
+      "password": "240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9",
+      "full_name": "Test Admin",
+      "email": "testadmin@example.com",
+      "role": "election_officer",
+      "created_at": "2026-03-13 19:58:19.106164",
+      "is_active": false
+    }
+  },
+  "admin_id_counter": 3,
+  "votes": [],
+  "audit_log": [
+    {
+      "timestamp": "2026-03-12 10:57:29.522822",
+      "action": "LOGIN_FAILED",
+      "user": "Yawe Arthur Shalom",
+      "details": "Invalid admin credentials"
+    },
+    {
+      "timestamp": "2026-03-12 10:58:36.764195",
+      "action": "LOGIN",
+      "user": "admin",
+      "details": "Admin login successful"
+    },
+    {
+      "timestamp": "2026-03-12 23:14:14.605732",
+      "action": "LOGOUT",
+      "user": "admin",
+      "details": "Admin logged out"
+    },
+    {
+      "timestamp": "2026-03-13 18:54:48.524957",
+      "action": "CREATE_STATION",
+      "user": "admin",
+      "details": "Created station: Central Station (ID: 1)"
+    },
+    {
+      "timestamp": "2026-03-13 18:54:48.529333",
+      "action": "UPDATE_STATION",
+      "user": "admin",
+      "details": "Updated station: Updated Central Station (ID: 1)"
+    },
+    {
+      "timestamp": "2026-03-13 19:09:45.514985",
+      "action": "CREATE_POSITION",
+      "user": "admin",
+      "details": "Created position: President (ID: 1)"
+    },
+    {
+      "timestamp": "2026-03-13 19:09:45.521421",
+      "action": "UPDATE_POSITION",
+      "user": "admin",
+      "details": "Updated position: Executive President"
+    },
+    {
+      "timestamp": "2026-03-13 19:28:10.470980",
+      "action": "CREATE_POLL",
+      "user": "admin",
+      "details": "Created poll: National General Election 2026 (ID: 1)"
+    },
+    {
+      "timestamp": "2026-03-13 19:58:19.106209",
+      "action": "CREATE_ADMIN",
+      "user": "admin",
+      "details": "Created admin: test_admin (Role: election_officer)"
+    },
+    {
+      "timestamp": "2026-03-13 19:58:19.110308",
+      "action": "DEACTIVATE_ADMIN",
+      "user": "admin",
+      "details": "Deactivated admin: test_admin"
+    }
+  ]
+}
